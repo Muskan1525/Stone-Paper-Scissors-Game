@@ -3,32 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic Tac Toc</title>
+    <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="msg-container hide">
-        <p id="msg">Winner</p>
-        <button id="new-btn">New Game</button>
-    </div>
-    <main>
-        <h1>Tic Tac Toc</h1>
-        <div class="container">
-            <div class="game">
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-            </div>
+    <h1>Rock Paper Scissors</h1>
+    <div class="choices">
+        <div class="choice" id="rock">
+            <img src="./rock.png" />
         </div>
+        <div class="choice" id="paper">
+            <img src="./paper.png" />
+        </div>
+        <div class="choice" id="scissor">
+            <img src="./scissors.png" />
+        </div>
+    </div>
 
-        <button id="resetbtn">Reset Game</button>
-    </main>
+    <div class="score-board">
+        <div class="score">
+            <p id="user-score">0</p>
+            <p>You</p>
+        </div>
+        <div class="score">
+            <p id="comp-score">0</p>
+            <p>Comp</p>
+        </div>
+    </div>
+
+    <div class="msg-container">
+        <p id="msg">Play your move</p>
+    </div>
+
     <script src="./app.js"></script>
 </body>
 </html>
